@@ -15,3 +15,6 @@ h1, h4, p, a{
   text-decoration: none;
 
 }
+ul{
+  list-style-type: none;
+}

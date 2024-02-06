@@ -4,7 +4,7 @@ import "./HeroImgStyles.css";
 import React from "react";
 
 import HomeImg from "../assets/homeImg.jpeg";
-import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";                
 
 
 const HeroImg = () => {

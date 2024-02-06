@@ -6,6 +6,7 @@ import React from "react";
 import HomeImg from "../assets/homeImg.jpeg";
 import { Link } from "react-router-dom";
 
+
 const HeroImg = () => {
   return (
     <div className= "hero">

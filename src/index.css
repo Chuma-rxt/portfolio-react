@@ -153,4 +153,32 @@ ul{
   scale: 0.7;
 }
 
-
+/*====================PROJECT BUTTONS==============*/
+.bTn {
+  width: 130px;
+  height: 40px;
+  font-size: 1.1em;
+  cursor: pointer;
+  background-color: #E5491A;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  transition: all .4s;
+ }
+ 
+ .bTn:hover {
+  border-radius: 5px;
+  transform: translateY(-10px);
+  box-shadow: 0 7px 0 -2px #D4D4D4 ,
+   0 15px 0 -4px #595959,
+   0 16px 10px -3px #E5491A;
+ }
+ 
+ .bTn:active {
+  transition: all 0.2s;
+  transform: translateY(-5px);
+  box-shadow: 0 2px 0 -2px #E5491A,
+   0 8px 0 -4px #595959,
+   0 12px 10px -3px #E5491A;
+ }
+ 

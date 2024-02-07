@@ -1,0 +1,38 @@
+.offer{
+    width: 100%;
+    padding: 6rem 1rem;
+    background: #D4D4D4;
+}
+.offer-container{
+    max-width: 1140px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px;
+}
+.off{
+    border: 1px solid #403F3F;
+    border-radius: 10%;
+    box-shadow: 10px 10px #403f3f8a;
+    color: #eee;
+    background-color: #403F3F;
+    text-align: center;
+    padding: 1rem;
+}
+.off:hover:hover{
+    background-color: #403f3f98;
+}
+.bar{
+    border-bottom: 1px solid #eee ;
+    width: 30%;
+    margin: 1.5rem auto;
+    display: block;
+}
+@media screen and (max-width: 740px){
+    .offer-container{
+        max-width: 90%;
+        margin: auto;
+        grid-template-columns: 1fr;
+    }
+    
+}

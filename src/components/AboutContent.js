@@ -54,7 +54,7 @@ const AboutContent = () => {
                 <div className="skill">
                     <div className="subject">Python</div>
                     <div className="progress-bar">
-                        <div className="progress-line" value="75%" style={{ maxWidth: '575%' }}></div>
+                        <div className="progress-line" value="75%" style={{ maxWidth: '75%' }}></div>
                     </div>
                 </div>
 

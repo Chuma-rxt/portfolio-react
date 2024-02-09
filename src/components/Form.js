@@ -1,4 +1,4 @@
-import "./FormStyles.css";
+import "./FormStyles.scss";
 
 import React from 'react';
 

@@ -12,4 +12,4 @@ const firebaseConfig = {
 
   const fireDb = firebase.initializeForm(firebaseConfig);
 
-  export default fireDb.database.rf();
+  export default fireDb.database().rf();

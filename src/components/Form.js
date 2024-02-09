@@ -39,7 +39,7 @@ function Form () {
 
                                         <div className="col-md-12">
                                             <div className="form-group">
-                                                <textarea type="text" className="form-control" name="message" placeholder="Message" onChange={handleInputChange}></textarea>
+                                                <textarea type="text" className="form-control" name="message" placeholder="Message" cols="30" rows="6" onChange={handleInputChange}></textarea>
                                             </div>
                                         </div>
                                         <div className="col-md-12">
@@ -55,36 +55,38 @@ function Form () {
                             <div className="info-wrap w-100 p-lg-5 p-4 img">
                                 <h2>Contact Me</h2>
                                 <p className="mb-4">Open for any suggestions</p>
-                                <div className="dbox w-100 d-flex align-items-start">
+                                <div className="dbox w-100 d-flex align-items-center">
                                     <div className="icon d-flex align-items-center justify-content-center">
                                         <span className="fa fa-map-marker"></span>
                                     </div>
                                     <div className="text pl-3">
                                         <p>
-                                            <span>Address:</span> Langa, Cape Town
+                                            <span>Address:</span>
+                                            <a>Langa, Cape Town</a> 
                                         </p>
                                     </div>
                                 </div>
 
-                                <div className="dbox w-100 d-flex align-items-start">
+                                <div className="dbox w-100 d-flex align-items-center">
                                     <div className="icon d-flex align-items-center justify-content-center">
                                         <span className="fa fa-phone"></span>
                                     </div>
                                     <div className="text pl-3">
                                         <p>
-                                            <span>Phone:</span>+27 733 265 346
+                                            <span>Phone:</span>
+                                            <a href="tel://0733265346">+27 733 265 346</a>
                                         </p>
                                     </div>
                                 </div>
 
-                                <div className="dbox w-100 d-flex align-items-start">
+                                <div className="dbox w-100 d-flex align-items-center">
                                     <div className="icon d-flex align-items-center justify-content-center">
                                         <span className="fa fa-paper-plane"></span>
                                     </div>
                                     <div className="text pl-3">
                                         <p>
                                             <span>Email:</span>
-                                            <a href="#">craxoti60@gmail.com</a>
+                                            <a href="mailto:craxoti@gmail.com">craxoti60@gmail.com</a>
                                         </p>
                                     </div>
                                 </div>

@@ -5,7 +5,7 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 
 import React from 'react';
 import { Link } from "react-router-dom";
-import pic1 from "../assets/Myabout.jpeg";
+import pic1 from "../assets/myabou.jpeg";
 
 const AboutContent = () => {
   return (
@@ -79,7 +79,33 @@ const AboutContent = () => {
                     </div>
                 </div>
 
-                
+                <div className="skill">
+                    <div className="subject">Figma</div>
+                    <div className="progress-bar">
+                        <div className="progress-line" value="70%" style={{ maxWidth: '70%' }}></div>
+                    </div>
+                </div>
+
+                <div className="skill">
+                    <div className="subject">React.Js</div>
+                    <div className="progress-bar">
+                        <div className="progress-line" value="80%" style={{ maxWidth: '80%' }}></div>
+                    </div>
+                </div>
+
+                <div className="skill">
+                    <div className="subject">CISCO</div>
+                    <div className="progress-bar">
+                        <div className="progress-line" value="95%" style={{ maxWidth: '95%' }}></div>
+                    </div>
+                </div>
+
+                <div className="skill">
+                    <div className="subject">CyberSecurity</div>
+                    <div className="progress-bar">
+                        <div className="progress-line" value="85%" style={{ maxWidth: '85%' }}></div>
+                    </div>
+                </div>
 
             </section>
         </div>

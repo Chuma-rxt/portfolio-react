@@ -1,198 +1,52 @@
-.contact-section {
-    padding: 7em 0;
-  }
-  
-  .wrapper {
-    width: 100%;
-    -webkit-box-shadow: 0px 21px 41px -13px rgba(0, 0, 0, 0.18);
-    -moz-box-shadow: 0px 21px 41px -13px rgba(0, 0, 0, 0.18);
-    box-shadow: 0px 21px 41px -13px rgba(0, 0, 0, 0.18);
-  }
-  
-  .contact-wrap {
-    background: #595959;
-    background: -moz-linear-gradient(
-      -45deg,
-      #595959 0%,
-      #595959 100%
-    );
-    background: -webkit-gradient(
-      left top,
-      right bottom,
-      color-stop(0%, #595959),
-      color-stop(100%, #595959)
-    );
-    background: -webkit-linear-gradient(
-      -45deg,
-      #595959 0%,
-      #595959 100%
-    );
-    background: -o-linear-gradient(
-      -45deg,
-      #595959 0%,
-      #595959 100%
-    );
-    background: -ms-linear-gradient(
-      -45deg,
-      #595959 0%,
-      #595959 100%
-    );
-    background: linear-gradient(
-      135deg,
-      #595959 0%,
-      #595959 100%
-    );
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7f279c', endColorstr='#2e279d', GradientType=1 );
-    h3 {
-      color: #fff;
-    }
-  }
-  
-  h2 {
-    color: white;
-  }
-  
-  .img {
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-  }
-  
-  .form-control {
-    height: 62px;
-    background: transparent;
-    color: rgb(255, 255, 255) !important;
-    font-size: 16px;
-    border-radius: 0px;
-    box-shadow: none !important;
-    border: 1px solid rgb(255, 255, 255);
-    &::-webkit-input-placeholder {
-      /* Chrome/Opera/Safari */
-      color: rgb(255, 255, 255) !important;
-    }
-    &::-moz-placeholder {
-      /* Firefox 19+ */
-      color: rgb(255, 255, 255) !important;
-    }
-    &:-ms-input-placeholder {
-      /* IE 0+ */
-      color: rgb(255, 255, 255) !important;
-    }
-    &:-moz-placeholder {
-      /* Firefox 18- */
-      color: rgb(255, 255, 255) !important;
-    }
-    &:focus,
-    &:active {
-      background: transparent;
-      border-color: rgba(255, 255, 255, 0.5) !important;
-    }
-  }
-  
-  textarea.form-control {
-    height: inherit !important;
-    margin-top: 5px;
-  }
-  
-  .contactForm {
-    .form-control {
-      border: none;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-      padding: 0;
-    }
-  }
-  
-  .bTNN {
-    padding: 12px 16px;
-    cursor: pointer;
-    border-width: 1px;
-    border-radius: 5px;
-    font-size: 14px;
-    font-weight: 400;
-    -webkit-box-shadow: 0px 10px 20px -6px rgba(0, 0, 0, 0.12);
-    -moz-box-shadow: 0px 10px 20px -6px rgba(0, 0, 0, 0.12);
-    box-shadow: 0px 10px 20px -6px rgba(0, 0, 0, 0.12);
-    position: relative;
-    margin-top: 20px;
-  }
-  
-  .bTNN-primary {
-    background: #d62196 !important;
-    border-color: #d62196 !important;
-    color: #fff;
-  }
-  
-  .info-wrap {
-    .h2 {
-      color: #000;
-      position: relative;
-      &:after {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 60px;
-        height: 3px;
-        background: #d62196;
-        content: "";
-      }
-    }
-    .dbox {
-      width: 100%;
-      // color: rgba(255,255,255,.8);
-      margin-bottom: 25px;
-      &:last-child() {
-        margin-bottom: 0;
-      }
-      p {
-        margin-bottom: 0;
-        span {
-          font-weight: 600;
-          color: #595959;
-        }
-        a {
-          color: #595959;
-        }
-      }
-      .icon {
-        width: 50px;
-        height: 50px;
-        border-radius: 50%;
-        border: 1px solid #595959;
-        span {
-          font-size: 20px;
-          color: #595959;
-        }
-      }
-      .text {
-        width: calc(100% - 50px);
-      }
-    }
-  }
-  
-  
-  .h2,
-  .h2 {
-    line-height: 1.5;
-    font-weight: 400;
-    font-family: "Poppins", Arial, sans-serif;
-    color: #000;
-  }
-  
-  a {
-    transition: 0.3s all ease;
-    color: #eeee;
-    text-decoration: none;
-    &:hover,
-    &:focus {
-      text-decoration: none !important;
-      outline: none !important;
-      box-shadow: none;
-    }
-  }
-  
-  #contactForm {
-    .form-control {
-      font-size: 16px;
-    }
-  }
- 
+label{
+  color: #595959;
+  margin-bottom: 0.5rem;
+}
+form{
+  display: flex;
+  flex-direction: column;
+  padding: 4rem;
+  margin: auto;
+  max-width: 600px;
+
+}
+form input, form textarea{
+  margin-bottom: 1rem;
+  padding: 10px 18px;
+  font-size: 1.2rem;
+  background-color: #595959;
+  border-color: #D4D4D4;
+  color: #f4f4f4;
+}
+
+
+
+
+TO THE INDEX.CSS
+
+/*===============Submit==========*/
+.bTNN {
+font-size: 1.2rem;
+padding: 1rem 2.5rem;
+border: none;
+outline: none;
+border-radius: 0.4rem;
+cursor: pointer;
+text-transform: uppercase;
+background-color: #595959;
+color: rgb(234, 234, 234);
+font-weight: 700;
+transition: 0.6s;
+box-shadow: 0px 0px 60px #E5491A;
+-webkit-box-reflect: below 10px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(224, 115, 26, 0.938));
+}
+
+.bTNN:active {
+scale: 0.92;
+}
+
+.bTNN:hover {
+background: #E5491A;
+background: linear-gradient(270deg, #D4D4D4 0%, #E5491A 60%);
+color: #eee;
+}

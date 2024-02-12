@@ -3,13 +3,15 @@ import NavBar from "../components/NavBar";
 import  HeroImg from "../components/HeroImg";
 import  Footer from "../components/Footer";
 import Home1 from "../components/Home1";
+import Work from "../components/Work";
 
 const Home = () => {
   return (
     <div>
       <NavBar />
       <HeroImg />
-      <Home1 />
+      
+      <Work />
       <Footer />
     </div>
   )

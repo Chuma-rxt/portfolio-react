@@ -32,9 +32,15 @@ const Footer = () => {
             <div className="Right">
                 <p>© All Rights Reserved By Chuma Raxothi.</p>
                 <div className="social">
-                <FaFacebook size={30} style={{color:"#fff", marginRight: "1rem"}} />
-                <FaGithub size={30} style={{color:"#fff", marginRight: "1rem"}} />
-                <FaLinkedin size={30} style={{color:"#fff", marginRight: "1rem"}} />
+                <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+                        <FaFacebook size={30} style={{color:"#fff", marginRight: "1rem"}} />
+                    </a>
+                    <a href="https://github.com/Chuma-rxt" target="_blank" rel="noopener noreferrer">
+                        <FaGithub size={30} style={{color:"#fff", marginRight: "1rem"}} />
+                    </a>
+                    <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
+                        <FaLinkedin size={30} style={{color:"#fff", marginRight: "1rem"}} />
+                    </a>
 
                 </div>
             </div>

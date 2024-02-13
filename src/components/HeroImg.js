@@ -17,7 +17,7 @@ const HeroImg = () => {
           <p> Hello my name is Chuma Raxothi</p>
           <h1>NETORK ENGINEER || SOFTWARE DEVELOPER</h1>
           <div>
-            <button class="Download-button">
+            <button  href="Chrome HTML Document (.pdf)" class="Download-button">
               <svg
               xmlns="http://www.w3.org/2000/svg"
               height="16"
@@ -34,7 +34,6 @@ const HeroImg = () => {
             <Link to="/contact"
             className="btn btn-light">
               CONTACT</Link>
-
           </div> 
         </div>
     </div>

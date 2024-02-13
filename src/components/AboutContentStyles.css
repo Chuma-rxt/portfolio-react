@@ -22,11 +22,11 @@
 }
 
 
-.about-container .about-contents{
+.about-container .about-contents {
     display: grid;
     grid-template-columns: 2fr 5fr;
     grid-gap: 70px;
-    grid-template-areas:'imageSect infoSect'
+    grid-template-areas: 'imageSect infoSect'
                          'skillSect skillSect';
 }
 .about-contents .imageSection{

@@ -3,7 +3,7 @@ import MyWork from "./MyWork";
 import WorkCrad from "./WorkCrad";
 
 import React from 'react'
-
+import ProjectCardData from './WorkCrad';
 
 const Work = () => {
   return (

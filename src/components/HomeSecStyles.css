@@ -8,19 +8,21 @@
   margin: 0 10px;
 }
 .slick-list {
-  margin: 0 -10px;
+  margin: 0 -100px;
 }
 .card{
     border: 1px solid #fff;
     background: #3A3939;
-    border-radius: 8px;
+    border-radius: 20px;
     overflow: hidden;
+    padding-bottom: 20px;
+    box-shadow: #3A3939;
 }
 .card-top h1{
     font-size: 2rem;
     margin: 10px 20px;
 }
-.card-top > img{
+.card-top > img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -29,4 +31,36 @@
 }
 .card-bottom{
     margin: 10px 20px;
+}
+
+.button-container{
+display: flex;
+justify-content: space-between;
+padding: 0.5rem 0;
+}
+.button-container{
+padding: 0.5rem 1rem;
+}
+  
+ 
+.button-container {
+  margin-top: 5px; /* Adjust the margin as needed */
+}
+
+.button-container a {
+  margin-right: 10px; /* Default margin between buttons */
+  border-width: 2px; /* Default border width */
+}
+
+@media screen and (max-width: 768px) {
+  .button-container a {
+    margin-right: 15px; /* Adjust margin between buttons for tablet devices */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .button-container a {
+    margin-right: 5px; /* Adjust margin between buttons for mobile devices */
+    border-width: 1px; /* Adjust border width for mobile devices */
+  }
 }

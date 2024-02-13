@@ -1,13 +1,12 @@
-import "./HomeSecStyles.css";
+import React from 'react';
 import Slider from "react-slick";
+import ProjectCardData from './WorkCrad';
+import { Link } from "react-router-dom";
+import "./HomeSecStyles.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-import React from 'react'
-import ProjectCardData from './WorkCrad';
-import { Link } from "react-router-dom";
-
-function HomeSec () {
+function HomeSec() {
   const settings = {
     dots: true,
     infinite: false,
@@ -28,40 +27,34 @@ function HomeSec () {
       {
         breakpoint: 600,
         settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
-          initialSlide: 2
-        }
-      },
-      {
-        breakpoint: 480,
-        settings: {
           slidesToShow: 1,
           slidesToScroll: 1
         }
       }
     ]
   };
+
   return (
     <div className="HomeSec">
       <Slider {...settings}>
-
-      {ProjectCardData.map(item=>(
-        <div className="card">
+        {ProjectCardData.map(item => (
+          <div className="card" key={item.id}>
             <div className="card-top">
               <img src={item.imgsrc} alt={item.title} />
               <h1>{item.title}</h1>
             </div>
             <div className="card-bottom">
               <p>{item.text}</p>
-              <Link>{item.view}</Link>
-              <button>{item.source}</button>
+              <div className="button-container">
+                <a className="bTn" href={item.view} target="_blank" rel="noopener noreferrer">View</a>
+                <a className="bTn" href={item.source} target="_blank" rel="noopener noreferrer">Source</a>
+              </div>
             </div>
-        </div>   
-        ))}   
-      </Slider>   
+          </div>
+        ))}
+      </Slider>
     </div>
   );
 }
 
-export default HomeSec;   
+export default HomeSec;

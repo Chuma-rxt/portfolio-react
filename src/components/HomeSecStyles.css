@@ -1,0 +1,16 @@
+.card{
+    border: 1px solid #fff;
+    background: black;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.card-top h1{
+    font-size: 1rem;
+}
+.card-top img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    height: 400px;
+}

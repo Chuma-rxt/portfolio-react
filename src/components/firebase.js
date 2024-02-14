@@ -1,4 +1,4 @@
-import firebase from "../components/Form";
+import firebase from "./Form";
 import "firebase/database";
 
 const firebaseConfig = {
@@ -11,5 +11,5 @@ const firebaseConfig = {
   };
 
   const fireDb = firebase.initializeForm(firebaseConfig);
-
-  export default fireDb.database().rf();
+  export default firebaseConfig;
+ // export default fireDb.database().ref();

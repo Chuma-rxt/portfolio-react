@@ -54,4 +54,19 @@
 .conta{
     justify-content: center;
 }  
+@keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Apply animation to paragraphs */
+  .heading p {
+    animation: slideIn 5s ease forwards;
+  }
   

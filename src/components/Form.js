@@ -84,7 +84,10 @@ function Form() {
         
         <div className="form">
             
+            <h2  style={{ textAlign: "center" }}>Send Me A Message</h2>
             <form onSubmit={getData}>
+
+                
                 <label>Your Name</label>
                 <input
                     type="text"

@@ -9,7 +9,7 @@ const Contact = () => {
   return (
     <div>
       <NavBar />
-      <HeroImg2 heading="Contact." text="Let's chat here"/>
+      <HeroImg2 heading="Contact." text="Let's chat here!"/>
       <Form />
       <Footer />
     </div>

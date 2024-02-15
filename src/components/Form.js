@@ -2,25 +2,28 @@ import React, { useState } from 'react';
 import ReCAPTCHA from 'react-google-recaptcha';
 import { ToastContainer, toast } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
+import emailjs from 'emailjs-com'; // Import emailjs-com
 import fireDb from "./firebaseInit"; // Import initialized Firebase app
 import "./FormStyles.scss";
 
-function Form ()  {
+function Form() {
     const [user, setUser] = useState({
-        FullName: '', Email:'', Message:''
+        FullName: '',
+        Email: '',
+        Message: ''
     });
 
     const handleInputChange = (e) => {
         const { name, value } = e.target;
-        setUser({...user, [name]: value});
+        setUser({ ...user, [name]: value });
     }
 
     const handleCaptchaChange = (response) => {
         // Assuming 'response' is the captcha response token
         // Validate the captcha response
         if (isValidCaptcha(response)) {
-            // Captcha validation passed, perform further actions
-            console.log("Captcha validation passed. Proceed with further actions.");
+            // Captcha validation passed, proceed with further actions
+            console.log("Captcha validation passed. Proceeding with further actions.");
             // Add your logic here
         } else {
             // Captcha validation failed
@@ -48,24 +51,27 @@ function Form ()  {
         }
 
         const { FullName, Email, Message } = user;
-        
-        const options = {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify({
-                FullName, Email, Message
-            })
-        }
 
         try {
+            await emailjs.sendForm('service_zv9hn9a', 'template_2oo3qwi', e.target, 'wSaoVe3DwwbqMEtrt');
+            console.log("Email sent successfully");
+
+            const options = {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    FullName, Email, Message
+                })
+            };
+
             const res = await fetch('https://contact-form-37435-default-rtdb.firebaseio.com/UserData.json', options);
-            if (res) {
-                alert('Message Sent Successfully');
+            if (res.ok) {
+                toast.success('Message Sent Successfully');
                 setUser({ FullName: '', Email: '', Message: '' }); // Clear form fields on success
             } else {
-                toast.error('Error Occurred');
+                throw new Error('Error Occurred');
             }
         } catch (error) {
             console.error(error);
@@ -74,8 +80,9 @@ function Form ()  {
     }
 
     return (
+        
         <div className="form">
-            <form>
+            <form onSubmit={getData}>
                 <label>Your Name</label>
                 <input
                     type="text"
@@ -111,10 +118,12 @@ function Form ()  {
                     />
                 </div>
 
-                <button className="bTNN" onClick={getData}>Submit</button>
+                <button type="submit" className="bTNN">Submit</button>
             </form>
+            <ToastContainer />
         </div>
-    )
+        
+    );
 }
 
 export default Form;

@@ -80,8 +80,10 @@ function Form() {
     }
 
     return (
+       
         
         <div className="form">
+            
             <form onSubmit={getData}>
                 <label>Your Name</label>
                 <input
@@ -120,6 +122,9 @@ function Form() {
 
                 <button type="submit" className="bTNN">Submit</button>
             </form>
+            <div>
+            
+            </div>
             <ToastContainer />
         </div>
         

@@ -76,6 +76,13 @@ ul{
 .Download-button:hover::after {
   height: 60%;
 }
+/* Responsive styles for mobile and tablet devices */
+@media screen and (max-width: 768px) {
+  .Download-button {
+    font-size: 14px; /* Adjust font size */
+    padding: 10px 16px; /* Adjust padding */
+  }
+}
 
 .btn-light {
   position: relative;

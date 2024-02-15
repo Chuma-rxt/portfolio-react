@@ -30,10 +30,12 @@ const HeroImg = () => {
                 ></path>
               </svg>
               <span>Download Resume</span>
-            </button>
+            </button> 
+            <div className="conta">
             <Link to="/contact"
             className="btn btn-light">
               CONTACT</Link>
+            </div>
           </div> 
         </div>
     </div>

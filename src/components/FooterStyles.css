@@ -1,47 +1,79 @@
-.footer{
+/* FooterStyles.css */
+
+.footer {
     width: 100%;
     padding: 6rem 0;
     background-color: #595959;
-}
-.footer-container{
+    animation: fadeInFromBottom 1s ease-in-out; /* Apply animation */
+  }
+  
+  @keyframes fadeInFromBottom {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .footer-container {
     max-width: 1140px;
     margin: auto;
     display: grid;
     grid-template-columns: repeat(2, 2fr);
     grid-gap: 40px;
-}
-.left{
+  }
+  
+  .left {
     height: 100%;
     max-width: 100%;
     display: flex;
     flex-direction: column;
     padding: 1rem;
-}
-.location{
+  }
+  
+  .location {
     display: flex;
     margin-bottom: 0.8rem;
-}
-.location p{
+  }
+  
+  .location p {
     line-height: 30px;
-}
-.right{
+  }
+  
+  .right {
     height: 100%;
     max-width: 100%;
     display: flex;
     flex-direction: column;
     padding: 1rem;
-}
-.social{
+  }
+  
+  .social {
     margin-top: 1rem;
-}
-p {
+  }
+  
+  p {
     font-size: 1.2rem;
     padding-bottom: 0.7rem;
-}
-@media screen and (max-width: 640px){
-    .footer-container{
-       
-        grid-template-columns: 1fr;
-        
+  }
+  
+  @media screen and (max-width: 640px) {
+    .footer-container {
+      grid-template-columns: 1fr;
     }
-}
+  }
+  
+/* FooterStyles.css */
+
+.social  {
+    transition: color 0.3s; /* Smooth transition for icon color change */
+  }
+  
+  .social :hover {
+    color: #E5491A; /* Change icon color on hover */
+  }
+ 
+  

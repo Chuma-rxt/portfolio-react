@@ -56,6 +56,28 @@
      }
     
  }
+ .nav-link {
+    color: white;
+    text-decoration: none;
+    position: relative;
+  }
+  
+  .nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 100%; /* Initially positioned to the right of the link */
+    width: 0;
+    height: 2px;
+    background-color: #E5491A;
+    transition: width 0.3s ease-in-out, left 0.3s ease-in-out; /* Smooth transition for width and position */
+  }
+  
+  .nav-link:hover::after {
+    width: 100%; /* Expand the width to cover the link */
+    left: 0; /* Move the underline to the left, covering the link */
+  }
+  
 
  /* Add animation to links */
 /* .nav-menu li, h1 {

@@ -1,60 +1,57 @@
-import "./NavbarStyle.css"
-
-import React, {useState} from "react";
-import { Link } from "react-router-dom"
-
-import{ FaBars, FaTimes} from "react-icons/fa";
-
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
+import { FaBars, FaTimes } from "react-icons/fa";
+import "./NavbarStyle.css";
 
 const NavBar = () => {
+  const [click, setClick] = useState(false);
+  const handleClick = () => setClick(!click);
 
-    const [click, setClick] = useState(false);
-    const handleClick = () => setClick(!click);
+  const [color, setColor] = useState(false);
+  const changeColor = () => {
+    if (window.scrollY >= 100) {
+      setColor(true);
+    } else {
+      setColor(false);
+    }
+  };
 
-    const[color, setColor] = useState(false);
-    const changeColor = () => {
-        if (window.scrollY >= 100){
-            setColor(true);
-        } else {
-            setColor(false);
-        }
-    };
-
-    window.addEventListener("scroll", changeColor);
-
-
-
-
-
+  window.addEventListener("scroll", changeColor);
 
   return (
-    <div className={color ? "header header-bg" :
-    "header"}>
-        <Link to="/">
-            <h1>Chuma R.</h1>
-        </Link>
-        <ul className={click ? "nav-menu active" :"nav-menu"}>
-            <li>
-                <Link to="/" >Home</Link>
-            </li>
-            <li>
-                <Link to="/project" >About</Link>
-            </li>
-            <li>
-                <Link to="/about" >Project</Link>
-            </li>
-            <li>
-                <Link to="/contact" >Contact</Link>
-            </li>
-        </ul>
-        <div className="humburger" onClick=
-        {handleClick}>
-            {click ? (<FaTimes size={20} style={{color: 
-            "fff"}} />) : ( <FaBars size={20} style={{color: 
-            "fff"}} />)}
-            
-           
-        </div>
+    <div className={color ? "header header-bg" : "header"}>
+      <Link to="/">
+        <h1>Chuma R.</h1>
+      </Link>
+      <ul className={click ? "nav-menu active" : "nav-menu"}>
+        <li>
+          <Link to="/" className="nav-link" onClick={handleClick}>
+            Home
+          </Link>
+        </li>
+        <li>
+          <Link to="/project" className="nav-link" onClick={handleClick}>
+            About
+          </Link>
+        </li>
+        <li>
+          <Link to="/about" className="nav-link" onClick={handleClick}>
+            Project
+          </Link>
+        </li>
+        <li>
+          <Link to="/contact" className="nav-link" onClick={handleClick}>
+            Contact
+          </Link>
+        </li>
+      </ul>
+      <div className="humburger" onClick={handleClick}>
+        {click ? (
+          <FaTimes size={20} style={{ color: "fff" }} />
+        ) : (
+          <FaBars size={20} style={{ color: "fff" }} />
+        )}
+      </div>
     </div>
   );
 };

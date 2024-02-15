@@ -64,3 +64,10 @@ padding: 0.5rem 1rem;
     border-width: 1px; /* Adjust border width for mobile devices */
   }
 }
+/* FooterStyles.css */
+
+.style {
+  text-align: center; /* Align text to center */
+  color: #595959;
+  margin-top: -5%;
+}

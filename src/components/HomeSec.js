@@ -36,6 +36,7 @@ function HomeSec() {
 
   return (
     <div className="HomeSec">
+      <h1 className='style'>Projects</h1>
       <Slider {...settings}>
         {ProjectCardData.map(item => (
           <div className="card" key={item.id}>

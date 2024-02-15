@@ -53,3 +53,9 @@
         font-size: 1rem;
     } 
 }
+
+/* .Download-button,
+.btn.btn-light {
+    flex: 1; /* Allow both buttons to share available space equally 
+  }
+   */

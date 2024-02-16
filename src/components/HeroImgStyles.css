@@ -54,8 +54,15 @@
     } 
 }
 
-/* .Download-button,
-.btn.btn-light {
-    flex: 1; /* Allow both buttons to share available space equally 
+.container {
+    display: flex;
+    justify-content: space-between;
   }
-   */
+  
+  @media only screen and (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  

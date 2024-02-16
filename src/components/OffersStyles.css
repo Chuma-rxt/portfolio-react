@@ -13,7 +13,7 @@
 .off{
     border: 1px solid #403F3F;
     border-radius: 10%;
-    box-shadow: 10px 10px #403f3f8a;
+    box-shadow: 10px 10px #E5491A;
     color: #eee;
     background-color: #403F3F;
     text-align: center;
@@ -22,6 +22,15 @@
 .off:hover:hover{
     background-color: #403f3f98;
 }
+.off:hover {
+    background: #E5491A;
+    background: linear-gradient(270deg, #D4D4D4 0%, #E5491A 60%);
+    color: #eee;
+    }
+
+
+
+
 .bar{
     border-bottom: 1px solid #eee ;
     width: 30%;

@@ -4,6 +4,7 @@ import { ToastContainer, toast } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
 import emailjs from 'emailjs-com'; // Import emailjs-com
 import fireDb from "./firebaseInit"; // Import initialized Firebase app
+import { MdLocationOn, MdPhone, MdEmail, MdLanguage } from 'react-icons/md';
 import "./FormStyles.scss";
 
 function Form() {
@@ -84,15 +85,15 @@ function Form() {
         
         <div className="form">
 
-                <div class="contact-info">
-                    <h2>Contact Information</h2>
-                    <ul>
-                    <li><strong>Location:</strong> Langa,Cape Town, 7441</li>
-                    <li><strong>Phone:</strong> +27 733 265 346</li>
-                    <li><strong>Email:</strong> craxoti60@gmail.com</li>
-                    <li><strong>Website:</strong> <a href="portfolio-rose-mu-47.vercel.app" target="_blank">My Portfolio</a></li>
-                    </ul>
-                </div>
+        <div className="contact-info">
+            <h2>Contact Information</h2>
+            <ul>
+                <li><MdLocationOn /> <strong>Location:</strong> Langa, Cape Town, 7441</li>
+                <li><MdPhone /> <strong>Phone:</strong> +27 733 265 346</li>
+                <li><MdEmail /> <strong>Email:</strong> <a href="mailto:craxoti60@gmail.com">craxoti60@gmail.com</a></li>
+                <li><MdLanguage /> <strong>Website:</strong> <a href="https://portfolio-rose-mu-47.vercel.app" target="_blank" rel="noopener noreferrer">My Portfolio</a></li>
+            </ul>
+            </div>
             
             <h2  style={{ textAlign: "center" }}>Send Me A Message</h2>
             <form onSubmit={getData}>

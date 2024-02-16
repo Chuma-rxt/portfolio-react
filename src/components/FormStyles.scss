@@ -65,8 +65,10 @@ color: #eee;
 
 .contact-info h2 {
   margin-top: 0;
+  margin-bottom: 20px;
   font-size: 24px;
   color: #D4D4D4; /* Updated bold color */
+  text-decoration: underline;
 }
 
 .contact-info ul {
@@ -93,3 +95,32 @@ color: #eee;
 .contact-info ul li a:hover {
   text-decoration: underline;
 }
+.contact-info-container {
+  animation: slideIn 1s ease-in-out forwards;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.contact-info-list li {
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+

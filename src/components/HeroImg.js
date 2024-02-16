@@ -10,7 +10,7 @@ import { Link } from "react-router-dom";
 const HeroImg = () => {
 
   function downloadResume() {
-    const url = 'file:///C:/Users/ChumaRaxothi/Downloads/Chuma_Raxothi_Resume.pdf';
+    const url = 'https://drive.google.com/file/d/1gR_8bo9ialZpOiC9HWxZ6p-A_564PQXx/view?usp=sharing';
     const a = document.createElement('a');
     a.href = url;
     a.download = 'Chuma_Raxothi_Resume.pdf';

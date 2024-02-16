@@ -69,5 +69,12 @@ padding: 0.5rem 1rem;
 .style {
   text-align: center; /* Align text to center */
   color: #595959;
-  margin-top: -5%;
+  margin-top: -45%;
+  margin-bottom: 20px; /* Adding space at the bottom */
+}
+
+@media screen and (max-width: 768px) {
+  .style {
+    margin-top: -130%; /* Adjusted margin from top for smaller screens */
+  }
 }

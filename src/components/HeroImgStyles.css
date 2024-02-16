@@ -5,7 +5,7 @@
 }
 .homeImg{
     width: 100%;
-    height: 100%;
+    height: 60%;
     background-size: cover;
     background-position: center;
     object-fit: cover;
@@ -13,7 +13,7 @@
 .mask::after{
     content: "";
     width: 100%;
-    height: 100%;
+    height: 60%;
     position: absolute;
     top: 0;
     left: 0;
@@ -21,6 +21,32 @@
     opacity: 0.8;
 
 }
+@media screen and (max-width: 768px) {
+
+    .homeImg {
+        height: 50%; /* Adjust the height for smaller screens */
+    }
+
+    .mask::after {
+        height: 50%; /* Adjust the height for smaller screens */
+    }
+}
+
+
+
+.content {
+    text-align: center;
+    color: #595959;
+    margin-bottom: 20px;
+    margin-top: -13%; /* Initial margin-top */
+}
+@media screen and (max-width: 768px) {
+    .content {
+        margin-top: -10%; /* Adjusted margin-top for smaller screens */
+    }
+}
+
+
 .hero{
     height: 100%;
     width: 100%;

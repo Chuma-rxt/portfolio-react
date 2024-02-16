@@ -112,16 +112,14 @@ color: #eee;
 }
 @media (max-width: 768px) {
   .my-recaptcha {
-      /* Adjust styles for smaller screens */
-      width: 250px; /* Adjust width as needed */
-      height: 60px; /* Adjust height as needed */
+      width: 250px; 
+      height: 60px; 
   }
 }
 
 @media (max-width: 480px) {
   .my-recaptcha {
-      /* Adjust styles for even smaller screens */
-      width: 200px; /* Adjust width as needed */
-      height: 50px; /* Adjust height as needed */
+      width: 200px; 
+      height: 50px; 
   }
 }

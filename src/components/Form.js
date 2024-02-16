@@ -83,9 +83,9 @@ function Form() {
     return (
        
         
-        <div className="form">
+        <div className="form" fadeIn>
 
-        <div className="contact-info">
+        <div className="contact-info" fadeIn>
             <h2>Contact Information</h2>
             <ul>
                 <li><MdLocationOn /> <strong>Location:</strong> Langa, Cape Town, 7441</li>
@@ -94,8 +94,6 @@ function Form() {
                 <li><MdLanguage /> <strong>Website:</strong> <a href="https://portfolio-rose-mu-47.vercel.app" target="_blank" rel="noopener noreferrer">My Portfolio</a></li>
             </ul>
             </div>
-            
-            
             <form onSubmit={getData}>
                 <h2  style={{ textAlign: "center", color: "#595959" }}>Send Me A Message</h2>
 

@@ -83,6 +83,16 @@ function Form() {
        
         
         <div className="form">
+
+                <div class="contact-info">
+                    <h2>Contact Information</h2>
+                    <ul>
+                    <li><strong>Location:</strong> Langa,Cape Town, 7441</li>
+                    <li><strong>Phone:</strong> +27 733 265 346</li>
+                    <li><strong>Email:</strong> craxoti60@gmail.com</li>
+                    <li><strong>Website:</strong> <a href="portfolio-rose-mu-47.vercel.app" target="_blank">My Portfolio</a></li>
+                    </ul>
+                </div>
             
             <h2  style={{ textAlign: "center" }}>Send Me A Message</h2>
             <form onSubmit={getData}>

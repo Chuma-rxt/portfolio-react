@@ -8,6 +8,7 @@ form{
   padding: 4rem;
   margin: auto;
   max-width: 600px;
+  margin-top: -5%;
   
 
 }
@@ -60,8 +61,13 @@ color: #eee;
   padding: 20px;
   background-color: #595959;
   border-radius: 10px;
-  box-shadow: 0 0 10px #E5491A;
+  box-shadow: 0 0 10px white;
 }
+.contact-info:hover {
+  background: #E5491A;
+  background: linear-gradient(270deg, #D4D4D4 0%, #E5491A 60%);
+  color: #eee;
+  }
 
 .contact-info h2 {
   margin-top: 0;
@@ -88,7 +94,7 @@ color: #eee;
 }
 
 .contact-info ul li a {
-  color: #E5491A;
+  color: #D4D4D4;
   text-decoration: none;
 }
 
@@ -99,28 +105,4 @@ color: #eee;
   animation: slideIn 1s ease-in-out forwards;
 }
 
-@keyframes slideIn {
-  from {
-    opacity: 0;
-    transform: translateY(-50px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.contact-info-list li {
-  opacity: 0;
-  animation: fadeIn 1s ease-in-out forwards;
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
 

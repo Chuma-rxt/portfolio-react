@@ -95,8 +95,9 @@ function Form() {
             </ul>
             </div>
             
-            <h2  style={{ textAlign: "center" }}>Send Me A Message</h2>
+            
             <form onSubmit={getData}>
+                <h2  style={{ textAlign: "center", color: "#595959" }}>Send Me A Message</h2>
 
                 
                 <label>Your Name</label>

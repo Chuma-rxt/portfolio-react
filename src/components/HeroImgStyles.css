@@ -42,7 +42,7 @@
 }
 @media screen and (max-width: 768px) {
     .content {
-        margin-top: -10%; /* Adjusted margin-top for smaller screens */
+        margin-top: -40%; /* Adjusted margin-top for smaller screens */
     }
 }
 

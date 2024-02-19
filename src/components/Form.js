@@ -105,6 +105,9 @@ function Form() {
                     placeholder="Name"
                     value={user.FullName}
                     onChange={handleInputChange}
+                    required
+                    pattern="[a-zA-Z]{3,}" 
+                    title="Name must be at least 3 characters long and contain only letters"
                 />
 
                 <label>Email</label>
@@ -114,6 +117,8 @@ function Form() {
                     placeholder="Email"
                     value={user.Email}
                     onChange={handleInputChange}
+                    required
+                    pattern="[a-z0-9._%+-]+@gmail\.com"
                 />
 
                 <label>Message</label>
@@ -123,6 +128,7 @@ function Form() {
                     placeholder="Type your message here"
                     value={user.Message}
                     onChange={handleInputChange}
+                    required
                 />
 
                 <div className="send-btn-container">

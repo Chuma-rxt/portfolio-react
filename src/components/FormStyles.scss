@@ -119,6 +119,7 @@ color: #eee;
 .my-recaptcha{
   margin-top: 1%;
   margin-bottom: 2%;
+  
 }
 @media (max-width: 768px) {
   .my-recaptcha {
@@ -135,3 +136,8 @@ color: #eee;
       margin-bottom: -2%;
   }
 }
+// @media (max-width: 320px) {
+//   .my-recaptcha {
+//     size: compact;
+//   }
+// }

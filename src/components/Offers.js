@@ -35,11 +35,11 @@ const Offers = () => {
                 <h3>CyberSecurity</h3>
                 <span className="bar"></span>
                 <p className="sente">By leveraging my certification in Introduction to Cybersecurity,
-                 I can position myself as a trusted cybersecurity advisor 
-                 and offer valuable services to clients looking to enhance their security 
-                 posture and protect against cyber threats. Continuously stay updated with the
-                  latest developments and best practices in the cybersecurity 
-                  field to provide the most effective solutions to your clients.
+                 I can position myself as a trusted cybersecurity advisor and offer
+                  valuable services to clients looking to enhance their security 
+                  posture and protect against cyber threats. Continuously stay 
+                  updated with the latest developments and best practices in the cybersecurity
+                   field to provide the most effective solutions to your clients📉📒.
                 </p>
             </div>
         </div>

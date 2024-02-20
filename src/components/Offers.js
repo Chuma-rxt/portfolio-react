@@ -16,7 +16,7 @@ const Offers = () => {
                   Local area network (LAN) engineers,
                  install and maintain large LANs for enterprises.
                  Network security specialists detect and prevent network security threats. 
-                 I am also specializing in VoIP, telecom and data center implementation 
+                 I am also specializing in VoIP, telecom and data center implementation. 
                  </p>
             </div>
 

@@ -18,7 +18,7 @@ const ProjectCardData = [
     {
         imgsrc: soft,
         title: "Online Booking Website",
-        text: "As a Software Developer I have been working in a group project where we were designing an online website for online booking for Hlalanathi BnB.",
+        text: "As a Software Developer I have been working in a group project where we were designing an online website for online booking for Hlalanathi Bed and Breakfast.",
         view: "bed-breakfast-b7bv3z509-chumas-projects.vercel.app",
         source: "https://github.com/Chuma-rxt/Bed-Breakfast"
     },

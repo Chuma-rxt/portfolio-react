@@ -9,14 +9,13 @@ const Offers = () => {
             <div className="off">
                 <h3>Networking Engineer</h3>
                 <span className="bar"></span>
-                <p className="sente">As a Network engineers I am specializing 
-                 in several roles and responsibilities,
-                 including the following: Cloud networking architects assist
-                  organizations with cloud infrastructure deployment. 
-                  Local area network (LAN) engineers,
-                 install and maintain large LANs for enterprises.
-                 Network security specialists detect and prevent network security threats. 
-                 I am also specializing in VoIP, telecom and data center implementation. 
+                <p className="sente">As a Network engineers I am specializing in several 
+                roles and responsibilities, including the following: Cloud networking 
+                architects assist organizations with cloud infrastructure deployment. 
+                Local area network (LAN) engineers, install and maintain 
+                large LANs for enterprises. Network security specialists detect and 
+                prevent network security threats. I am also specializing in VoIP, 
+                telecom and data center implementation⚙️💻.
                  </p>
             </div>
 

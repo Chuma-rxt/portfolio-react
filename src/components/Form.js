@@ -94,8 +94,8 @@ function Form() {
                 <li><MdLanguage /> <strong>Website:</strong> <a href="https://portfolio-rose-mu-47.vercel.app" target="_blank" rel="noopener noreferrer">My Portfolio</a></li>
             </ul>
             </div>
-            <div>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193595.04645517902!2d-74.11842906750498!3d40.70582563023261!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2suk!4v1645392463901!5m2!1sen!2suk" width="600" height="600" allowfullscreen="" loading="lazy"></iframe>
+            <div class="left-align">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28486.118852609193!2d18.4240555!3d-33.9248688!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcc670e6b8b7a79%3A0x23a590251013b17d!2sCape%20Town%2C%20South%20Africa!5e0!3m2!1sen!2suk!4v1645393407367!5m2!1sen!2suk" width="500" height="600" allowfullscreen="" loading="lazy"></iframe>
             </div>
 
 

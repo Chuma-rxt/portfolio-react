@@ -10,7 +10,7 @@ import { Link } from "react-router-dom";
 const HeroImg = () => {
 
   function downloadResume() {
-    const url = 'https://drive.google.com/file/d/1xj-COP03ltEwiqkNFrMIlKl6mrpBJ4_p/view?usp=sharing';
+    const url = 'https://drive.google.com/file/d/1bczmnIQ6u4-P85ni6XPk2Hv2-6_Vhpjb/view?usp=sharing';
     const a = document.createElement('a');
     a.href = url;
     a.download = 'Chuma_Raxothi_Resume.pdf';

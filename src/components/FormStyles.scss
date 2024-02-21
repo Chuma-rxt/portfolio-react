@@ -130,6 +130,14 @@ color: #eee;
       height: 60px; 
       margin-bottom: 7%;
   }
+  .form{
+    display: flex;
+    flex-direction: column;
+    // padding: 4rem;
+    // margin-left: 600px ;
+    // max-width: 600px;
+    // margin-top: -650px;
+  }
 }
 
 @media (max-width: 480px) {

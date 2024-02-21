@@ -9,6 +9,7 @@ import "./FormStyles.scss";
 function Form() {
     const [user, setUser] = useState({
         FullName: '',
+        Subject: '',
         Email: '',
         Message: ''
     });
@@ -29,7 +30,7 @@ function Form() {
     }
 
     const isFormValid = () => {
-        return user.FullName.trim() !== '' && user.Email.trim() !== '' && user.Message.trim() !== '' && captchaVerified;
+        return user.FullName.trim() !== '' && user.Subject.trim() !== '' && user.Email.trim() !== '' && user.Message.trim() !== '' && captchaVerified;
     }
 
     const handleSubmit = async (e) => {
@@ -40,7 +41,7 @@ function Form() {
             return;
         }
 
-        const { FullName, Email, Message } = user;
+        const { FullName, Subject, Email, Message } = user;
 
         try {
             await emailjs.sendForm('service_zv9hn9a', 'template_2oo3qwi', e.target, 'wSaoVe3DwwbqMEtrt');
@@ -52,14 +53,14 @@ function Form() {
                     'Content-Type': 'application/json'
                 },
                 body: JSON.stringify({
-                    FullName, Email, Message
+                    FullName, Subject, Email, Message
                 })
             };
 
             const res = await fetch('https://contact-form-37435-default-rtdb.firebaseio.com/UserData.json', options);
             if (res.ok) {
                 toast.success('Message Sent Successfully');
-                setUser({ FullName: '', Email: '', Message: '' }); // Clear form fields on success
+                setUser({ FullName: '', Subject: '', Email: '', Message: '' }); // Clear form fields on success
             } else {
                 throw new Error('Error Occurred');
             }
@@ -96,8 +97,20 @@ function Form() {
                     value={user.FullName}
                     onChange={handleInputChange}
                     required
-                    pattern="[a-zA-Z]{3,}"
+                    pattern="[a-zA-Z]{2,}"
                     title="Name must be at least 3 characters long and contain only letters"
+                />
+
+                <label>Subject</label>
+                <input
+                    type="text"
+                    name="Subject"
+                    placeholder="subject"
+                    value={user.Subject}
+                    onChange={handleInputChange}
+                    required
+                    pattern="[a-zA-Z]{3,}"
+                    title="Subject must be at least 3 characters long and contain only letters"
                 />
 
                 <label>Email</label>

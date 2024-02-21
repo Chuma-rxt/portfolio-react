@@ -10,9 +10,43 @@ form{
   max-width: 600px;
   margin-top: -650px;
 }
+
+// ===========Map=======
 .left-align {
-    margin-left: 50px;
+  margin-left: 50px;
 }
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .left-align {
+      margin-left: 30px; /* Adjust for tablets */
+  }
+}
+
+@media (max-width: 576px) {
+  .left-align {
+      margin-left: 20px; /* Adjust for mobile devices */
+  }
+}
+
+@media (max-width: 375px) {
+  .left-align {
+      margin-left: 10px; /* Adjust for smaller mobile devices like iPhone SE */
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 form input, form textarea{
   margin-bottom: 1rem;

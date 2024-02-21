@@ -110,7 +110,7 @@ function Form() {
                     onChange={handleInputChange}
                     required
                     pattern="[a-zA-Z]{3,}"
-                    title="Subject must be at least 3 characters long and contain only letters"
+                    
                 />
 
                 <label>Email</label>

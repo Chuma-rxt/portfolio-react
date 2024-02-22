@@ -5,35 +5,58 @@ label{
 form{
   display: flex;
   flex-direction: column;
-  padding: 4rem;
-  margin-left: 600px ;
+  // padding: 4rem;
+  width: 40vw;
   max-width: 600px;
-  margin-top: -650px;
+  // margin: auto;
+  
+}
+.form-row {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 5rem;
+  padding-bottom: 4rem;
 }
 
 // ===========Map=======
-.left-align {
-  margin-left: 50px;
+.iframe-container {
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  overflow: hidden;
+  margin-top: 10px; /* Adjust margin as needed */
 }
 
-/* Responsive adjustments */
+.iframe-container iframe {
+  border: 10px solid #ccc;
+  border-radius: 8px;
+  width: 100%;
+  min-width: 500px;
+  height: 700px; /* Adjust height as needed */
+}
+
 @media (max-width: 768px) {
-  .left-align {
-      margin-left: 30px; /* Adjust for tablets */
+  .form-row {
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+  }
+  .iframe-container iframe {
+    min-width: 200px;
+  }
+  form {
+    height: 100%;
+    min-height: 700px;
+    width: 90vw;
   }
 }
 
-@media (max-width: 576px) {
-  .left-align {
-      margin-left: 20px; /* Adjust for mobile devices */
-  }
-}
 
-@media (max-width: 375px) {
-  .left-align {
-      margin-left: 10px; /* Adjust for smaller mobile devices like iPhone SE */
-  }
-}
 
 
 

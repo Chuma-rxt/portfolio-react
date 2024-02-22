@@ -170,4 +170,15 @@
                              'infoSect infoSect'
                              'skillSect skillSect';
     } 
+    .imageSection img{
+        width: 100%;
+        min-width: 80vw;
+    }
+    .about-contents .imageSection::after{
+        min-width: 80vw;
+        width: 100%;
+    }
+    .about-container .about-contents {
+        grid-gap: 120px;
+    }
 }

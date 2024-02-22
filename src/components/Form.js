@@ -149,7 +149,7 @@ function Form() {
                             onChange={handleCaptchaChange}
                         />
                     </div>
-                    <br/><br/><br/>
+                    <br/><br/>
                     <button type="submit" className="bTNN">Submit</button>
                 </form>
             </div>

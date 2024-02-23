@@ -76,7 +76,7 @@ function Form() {
             <div className="contact-info">
                 <h2>Contact Information</h2>
                 <ul>
-                    <li><MdLocationOn /> <strong>Location:</strong> Langa, Cape Town, 7441</li>
+                    <li><MdLocationOn /> <strong>Location:</strong>  Cape Town </li>
                     <li><MdPhone /> <strong>Phone:</strong> +27 733 265 346</li>
                     <li><MdEmail /> <strong>Email:</strong> <a href="mailto:craxoti60@gmail.com">craxoti60@gmail.com</a></li>
                     <li><MdLanguage /> <strong>Website:</strong> <a href="https://portfolio-rose-mu-47.vercel.app" target="_blank" rel="noopener noreferrer">My Portfolio</a></li>

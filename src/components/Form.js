@@ -45,7 +45,7 @@ function Form() {
         const { FullName, Subject, Email, Message } = user;
 
         try {
-            await emailjs.sendForm('service_zv9hn9a', 'template_2oo3qwi', e.target, 'wSaoVe3DwwbqMEtrt');
+            await emailjs.sendForm('service_u6vyocb', 'template_2oo3qwi', e.target, 'wSaoVe3DwwbqMEtrt');
             console.log("Email sent successfully");
 
             const options = {

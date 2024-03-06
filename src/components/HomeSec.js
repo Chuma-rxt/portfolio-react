@@ -8,7 +8,7 @@ import "slick-carousel/slick/slick-theme.css";
 
 function HomeSec() {
   const settings = {
-    dots: true,
+    dots: false,
     infinite: false,
     speed: 500,
     slidesToShow: 2,
@@ -21,7 +21,7 @@ function HomeSec() {
           slidesToShow: 2,
           slidesToScroll: 2,
           infinite: true,
-          dots: true
+          dots: false
         }
       },
       {

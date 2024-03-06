@@ -11,8 +11,9 @@ const MyWork = (props) => {
                 <div className="pro-details">
                     <p>{props.text}</p>
                     <div className="pro-btn">
-                        <NavLink to={props.view} className="bTn">VIEW</NavLink>
-                        <NavLink to={props.source} className="bTn">SOURCE</NavLink>
+                    <NavLink to={props.view} target="_blank" className="bTn">VIEW</NavLink>
+                    <NavLink to={props.source} target="_blank" className="bTn">SOURCE</NavLink>
+
                     </div>
                 </div>
             </div>

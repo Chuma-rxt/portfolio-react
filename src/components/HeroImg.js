@@ -1,8 +1,5 @@
 import "./HeroImgStyles.css";
-
-
 import React from "react";
-
 import HomeImg from "../assets/homeImg1.jpeg";
 import { Link } from "react-router-dom";                
 
@@ -54,7 +51,7 @@ const HeroImg = () => {
 
               <div className="container">
                 <div className="conta">
-                <button onClick={() => downloadResume()} className="Download-button">
+                <button onClick={() => downloadResume()} target="_blank" className="Download-button">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   height="16"
@@ -67,13 +64,11 @@ const HeroImg = () => {
                   ></path>
                 </svg>
                 <span>Download Resume</span>
-              </button>
+                </button>
                 </div>
-                <div>
-                  <a href="/contact" className="btn btn-light">
-                    CONTACT
-                  </a>
-                </div>
+                    <Link to="/contact">
+                        <button className="btn-light">Contact</button>
+                    </Link>
               </div>
         </div>
     </div>

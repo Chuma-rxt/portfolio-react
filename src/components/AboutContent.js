@@ -20,7 +20,7 @@ const AboutContent = () => {
                 <h2>Network Engineer || Software Developer</h2>
                 <p>
                  Network Engineer, As a network engineer 
-                 I am focusing on delivering high-availability
+                 I am focusing on delivering high availability
                  network infrastructure to sustain the users' 
                  online and on-site information technology activities. 
                  I often overlap with other roles, such as computer network 

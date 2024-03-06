@@ -70,6 +70,7 @@ function Form() {
             toast.error('Error Occurred');
         }
     }
+    
 
     return (
         <div className="form">
